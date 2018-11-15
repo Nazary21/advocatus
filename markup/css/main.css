@@ -22,7 +22,7 @@ body {
 
 .container {
 	padding: 0px 15px;
-	width: 1000px;
+	width: 960px;
 	margin: 0px auto;
 }
 
@@ -68,8 +68,9 @@ body {
 }
 
 .background {
-	background: url(images/background.png);
-	width: 100%;
+	background: url(../images/baseback.png);
+	width: 1920px;
+	height: 840px;
 	position: relative;
 }
 .back-row {
@@ -93,4 +94,22 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     border-radius: 30%;
+}
+
+.attorney-row {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.feedback-row {
+	display:flex;
+	flex-direction: row;	
+	justify-content: space-between;
+}
+
+.pub-art-row {
+	display:flex;
+	flex-direction: row;	
+	justify-content: space-between;
 }
