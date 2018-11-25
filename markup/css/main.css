@@ -22,7 +22,7 @@ body {
 
 .container {
 	padding: 0px 15px;
-	width: 960px;
+	width: 80%;
 	margin: 0px auto;
 }
 
@@ -30,13 +30,23 @@ body {
  background: white;
  height: 80px;
  width: 100%;
- display: flex;
- justify-content: space-between;
+}
+
+.navbarrow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px 0px;
+}
+
+.navbarcol {
+
 }
 
 .logo {
-	display:flex;
-	justify-content: flex-start;	
+	display: block;
+	border: 2px solid red;
+	padding: none;
 }
 
 .navlist {
@@ -51,43 +61,56 @@ body {
 
 .navlist li {
     font-size: 14px;
-    display: flex;
+    display: block;
+    margin: 0px 10px;
 }
 
 .navlist li:hover {
-
-  	border: 0px 2px 0px 0px solid orange;
+    	border-bottom: 2px solid red;
+    	transform: translateY(0px);
 }
 
 .navlist a {
-
   	border: none;
 	display: inline-block;
-    padding: 20px 15px;
+    padding: 10px 15px;
     transition: all 0.4s ease;
+    color: black;
+    white-space: nowrap;
 }
 
 .background {
 	background: url(../images/baseback.png);
-	width: 1920px;
-	height: 840px;
+	width: 100%;
+	height: 450px;
+	background-size: cover;
+	background-position: center;
 	position: relative;
+	background-repeat: no-repeat;
 }
 .back-row {
 	display: flex;
 	justify-content: space-between;
-	position: relative;
+	position: absolute;
+	width: 60%;
+    align-content: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-.back-col {
-	display: flex;
-	flex-direction: row;
+.back-text h3, h1 {
+	padding: 0px 0px 0px 10px;
+	border-left: 2px solid orange;
+	color: white;
 }
 
-.back-col button {
+
+
+.button {
 	background-color: #E8BF5D;
     border: none;
     color: black;
-    padding: 20px;
+    padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -96,37 +119,175 @@ body {
     border-radius: 25px;
 }
 
-
-.about-us-text {
+.button:hover {
+	background-color: #f7d176;
+	box-shadow: 0px 0px 10px 2px white;
 }
 
-.about-us-text .backnum {
+.about-us-text {
 	position: relative;
-	display: inline-block;
-	z-index:100;
-	color: green;
-	 font-size: 120px;
+	width: 70%;
+	margin: 40px 0px;
+}
 
+.about-us-text p, h3{
+	color: black;
+	padding: 0px 10px 0px 10px;
+	border-left: 2px solid orange;
 }
 
 .about-us-text h3 {
+	padding: 0px 0px 10px 10px;
+}
+
+.about-us-text .backnum {
 	position: absolute;
+	z-index:-1;
+	color: #d9d9d9;
+	font-size: 120px;
+	top: 50%;
+	left: 0px;
+	transform: translateY(-50%);
+	padding: none;
 }
 
-.about-us-text h3, .maintext{
-	z-index:101;
-	color: red;
+.about-us-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 40px 30px;
 }
 
-.about-us-text {
-
+.about-us-col {
+	width: 50%;
 }
 
+.about-us-col h3 {
+	border: none;
+	padding: 10px 0px;
+}
+
+.historycol {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.historytext {
+	padding: 0px 20px;
+}
+
+.year {
+	font-weight: bold;
+	font: 25px;
+	padding: 0px 10px 0px 0px;
+}
+
+.practis-area {
+	background-color: #111111;
+	padding: 40px 30px;
+	position: relative;
+	z-index:-2;
+}
+
+.practis-area .backnum {
+	opacity: 0.2;
+}
+
+.practis-area p,h2 {
+	color: white;
+}
+
+.practis-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.practis-col {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.practis-col2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.practis-col2 .fas {
+	font-size: 2em;
+	color: orange;
+	padding: 10px;
+}
+
+.practis-col2 h2 {
+	padding: 5px 0px 10px 0px;
+}
 
 .attorney-row {
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
+	width: 100%;
+}
+
+.attorney {
+	position: relative;
+	padding: 0 40px;
+}
+
+.attorney .backnum {
+	opacity: 1;
+}
+
+.attorney .about-us-text p {
+	color: black;
+}
+
+.attorney-col {
+width: 100%;
+}
+
+.attorneycard {
+	margin: 10px;
+	padding: 10px;
+}
+.attorneycard img {
+	width: 100%;
+
+}
+
+.attorneycard .atname {
+	padding: 10px 0 0 0;
+	font-size: 1.3em;
+}
+
+.attorney .badge {
+	padding: 5px 0 0 0;
+}
+
+.attorneycard:hover {
+		box-shadow: 0px 0px 10px 2px grey;
+}
+
+.feedback {
+	background: url(../images/clientsback.png);
+	width: 100%;
+	z-index: -2;
+	background-size: cover;
+	padding: 30px 40px;
+	position: relative;
+}
+
+.feedback p {
+	color: white;
+}
+
+.feedback .backnum {
+	opacity: 0.1;
 }
 
 .feedback-row {
@@ -134,9 +295,56 @@ body {
 	flex-direction: row;	
 	justify-content: space-between;
 }
+.feedback-col {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 30px 30px;
+}
+
+.feedback-col img {
+	box-shadow: 15px 15px #E8BF5D;
+}
+
+.feedback-col .fas {
+	font-size: 2em;
+	color: white;
+	opacity: 0.3;
+	padding: 10px;
+}
+
+.feedtext {
+	padding: 10px;
+}
+
+.feedname {
+	font-size: 1.5em;
+	padding: 20px 0 10px 0;
+}
 
 .pub-art-row {
 	display:flex;
 	flex-direction: row;	
 	justify-content: space-between;
+}
+
+.contact-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+.social {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: flex-end;
+}
+
+.social li {
+	padding: 5px;
 }

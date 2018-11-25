@@ -1,0 +1,89 @@
+/* This is for tablet 767-1023*/
+@media only screen and (max-width: 1200px) {
+	h2 {
+		font-size: 25px;
+		color: red;
+	}
+	.item-wrap {
+		display: block;
+		width: 33.33%;
+		min-height: 200px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#nav-opener {
+		display: block;
+		opacity: 0;
+		visibility: visible;
+		color: red;
+	}
+}
+
+/* This is for smartphones less than 767*/
+
+@media only screen and (max-width: 767px) {
+
+.container {
+	padding: 0px 0px;
+	width: 100%;
+	margin: 0px 0px;
+}
+
+.navbarrow {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px 0px;
+}
+
+
+.about-us-row {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.about-us-col {
+	width: 100%;
+}
+
+.practis-row {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.attorney-row {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.feedback-row {
+	display:flex;
+	flex-direction: column;	
+	justify-content: space-between;
+}
+
+.pub-art-row {
+	display:flex;
+	flex-direction: column;	
+	justify-content: space-between;
+}
+
+.contact-row {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+
+}
